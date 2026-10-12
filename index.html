@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garba Photo Finder</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="wrap">
+<header><div class="badge">GARBA • PHOTO FINDER</div><h1>अपनी Garba Photos खोजें</h1><p>Selfie डालें, matching photos देखें और चुनी हुई original photo ₹2 में डाउनलोड करें।</p></header>
+<section class="card"><h2>1. अपनी selfie चुनें</h2><p class="muted">साफ़, सामने से ली गई फोटो बेहतर result देती है। आपकी selfie इस app में save नहीं होती।</p>
+<form id="searchForm"><input type="file" id="selfie" name="selfie" accept="image/jpeg,image/png,image/webp" required><button>मेरी Photos खोजें</button></form><div id="status" role="status"></div></section>
+<section id="resultsSection" hidden><h2>2. Matching Photos</h2><div id="results" class="grid"></div></section>
+<section class="card admin"><details><summary>Admin: नई photos upload करें</summary><p class="muted">यह हिस्सा सिर्फ आपके admin password से खुलेगा। सभी event photos एक साथ select कर सकते हैं।</p>
+<form id="adminForm"><label>Admin password<input type="password" id="adminPassword" required></label><label>Photos चुनें<input type="file" id="photos" accept="image/jpeg,image/png,image/webp" multiple required></label><button type="submit">Photos Upload करें</button></form><div id="adminStatus" role="status"></div></details></section>
+<footer>Photos private storage में रखी जाती हैं। Face matching के लिए लोगों को जानकारी दें और आवश्यक consent लें।</footer>
+</main><script src="https://checkout.razorpay.com/v1/checkout.js"></script><script src="/app.js"></script></body></html>
